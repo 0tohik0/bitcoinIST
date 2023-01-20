@@ -372,13 +372,33 @@ a {
   position: relative;
   padding-bottom: 50px;
   background: url("../img/cetka.png") #0E0E0E no-repeat center/cover;
-  padding-top: 160px;
+  padding-top: 150px;
   margin-top: -153px;
   z-index: 1;
+}
+.promo-block {
+  position: relative;
 }
 .promo-block__text {
   padding-top: 95px;
   width: 560px;
+}
+.promo-block__img2 {
+  position: relative;
+  z-index: 4;
+}
+.promo-block__img {
+  position: relative;
+}
+.promo-block__img::before {
+  position: absolute;
+  content: "";
+  width: 1200px;
+  height: 1000px;
+  background: url("../img/backlight.png") no-repeat;
+  left: -170px;
+  top: -170px;
+  z-index: 3;
 }
 .promo-title {
   position: relative;

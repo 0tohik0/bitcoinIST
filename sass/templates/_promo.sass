@@ -2,13 +2,30 @@
     position: relative
     padding-bottom: 50px
     background: url('../img/cetka.png') $dark no-repeat center / cover
-    padding-top: 160px
+    padding-top: 150px
     margin-top: -153px
     z-index: 1
     &-block
+        position: relative
         &__text
             padding-top: 95px
             width: 560px
+        &__img2
+            position: relative
+            z-index: 4
+            // картинка
+        &__img
+            position: relative
+            &::before
+                position: absolute
+                content: ''
+                width: 1200px
+                height: 1000px
+                background: url('../img/backlight.png') no-repeat 
+                left: -170px
+                top: -170px
+                z-index: 3
+                // блок картинки
     &-title
         position: relative
         font-size: 64px
